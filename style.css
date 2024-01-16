@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(96, 13, 173);
+}
+
+#game-board {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+.card .symbol {
+  font-size: 105px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card .number {
+  font-size: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.card .number.bottom {
+  top: auto;
+  left: auto;
+  right: 5px;
+  bottom: 5px;
+}
+
+.top-bar {
+  background-color: rgb(144, 35, 233);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+}
+
+.menu-btn:hover + .menu-dropdown,
+.menu-dropdown:hover {
+  display: flex;
+}
+
+.menu-btn {
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: rgb(144, 35, 233);
+  color: white;
+  padding: 80px;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  transform: translateY(24px);
+}
+
+.purple-box {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(144, 35, 233);
+  margin-top: 10px;
+}
+
+.spacer {
+  flex: 2;
+}
+
+.settings-btn,
+.help-btn {
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#random-button {
+  margin-top: 20px;
+  padding: 16px 32px;
+  background-color: rgb(167, 60, 255);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

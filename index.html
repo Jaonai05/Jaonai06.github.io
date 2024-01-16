@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Card Game</title>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="menu-btn" onclick="toggleMenu()">Randomizer &#9662;</div>
+    <div class="menu-dropdown" id="menuDropdown">
+      <div class="purple-box"></div>
+    </div>
+    <div class="spacer"></div>
+    <div class="settings-btn">Settings</div>
+    <div class="help-btn">Help</div>
+  </div>
+  <div id="game-board"></div>
+  <button id="random-button" onclick="startRandomGame()">Random</button>
+  <script src="script.js"></script>
+</body>
+</html>
